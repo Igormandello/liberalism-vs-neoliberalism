@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import TimeLine from './components/TimeLine';
+import Footer from './components/Footer';
 import './css/App.css';
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
             or randomised words which don't look even slightly believable.
           </p>
         </section>
+        <Footer/>
       </div>
     );
   }
