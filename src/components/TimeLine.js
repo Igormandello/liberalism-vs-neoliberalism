@@ -11,10 +11,12 @@ function TimeLine() {
     <div className="timeLine">
       <TimeLineTitle text="Surgimento"/>
       <TimeLineData {...data[0]} withTitles/>
-      <TimeLineData {...data[0]}/>
+      <TimeLineData {...data[1]}/>
+      <TimeLineData {...data[2]}/>
       <TimeLineTitle text="Utilização"/>
-      <TimeLineData {...data[0]} withTitles/>
+      <TimeLineData {...data[3]} withTitles/>
       <TimeLineTitle text="Crise"/>
+      <TimeLineData {...data[4]} withTitles/>
     </div>
   );
 }
@@ -22,41 +24,67 @@ function TimeLine() {
 const data = [
   {
     liberalism: {
-      year: 1860,
+      year: 1688,
       text: [
-        <p key={1}> 
-          There are many variations of passages of Lorem Ipsum available,  
-          but the majority have suffered alteration in some form, by injected  
-          humour, or randomised words which don't look even slightly believable.  
-          If you are going to use a passage of Lorem Ipsum, you need to be  
-          sure there isn't anything embarrassing hidden in the middle of text. 
-        </p>,
-         <p key={2}>
-         There are many variations of passages of Lorem Ipsum available,  
-         but the majority have suffered alteration in some form, by injected  
-         humour, or randomised words which don't look even slightly believable.  
-         If you are going to use a passage of Lorem Ipsum, you need to be  
-         sure there isn't anything embarrassing hidden in the middle of text. 
-       </p>
+        <p key={1}>
+        </p>
+      ]
+    }
+  },
+  {
+    liberalism: {
+      year: 1765,
+      text: [
+        <p key={1}>
+        </p>
       ]
     },
     neoliberalism: {
-      year: 2000,
+      year: 1930,
       text: [
-        <p key={1}> 
-          There are many variations of passages of Lorem Ipsum available,  
-          but the majority have suffered alteration in some form, by injected  
-          humour, or randomised words which don't look even slightly believable.  
-          If you are going to use a passage of Lorem Ipsum, you need to be  
-          sure there isn't anything embarrassing hidden in the middle of text. 
-        </p>,
-        <p key={2}>
-         There are many variations of passages of Lorem Ipsum available,  
-         but the majority have suffered alteration in some form, by injected  
-         humour, or randomised words which don't look even slightly believable.  
-         If you are going to use a passage of Lorem Ipsum, you need to be  
-         sure there isn't anything embarrassing hidden in the middle of text. 
-       </p>
+        <p key={1}>
+        </p>
+      ]
+    }
+  },
+  {
+    liberalism: {
+      year: 1776,
+      text: [
+        <p key={1}>
+        </p>
+      ]
+    }
+  },
+  {
+    liberalism: {
+      year: 1860,
+      text: [
+        <p key={1}>
+        </p>
+      ]
+    },
+    neoliberalism: {
+      year: 1970,
+      text: [
+        <p key={1}>
+        </p>
+      ]
+    }
+  },
+  {
+    liberalism: {
+      year: 1929,
+      text: [
+        <p key={1}>
+        </p>
+      ]
+    },
+    neoliberalism: {
+      year: 2008,
+      text: [
+        <p key={1}>
+        </p>
       ]
     }
   }
