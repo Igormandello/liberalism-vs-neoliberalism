@@ -1,51 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../css/TimeLineData.css';
 
 function TimeLineData(props) {
   return (
     <div className="timeLineData">
-      <div className="titles">
-        <span>Liberalismo</span>
-        <span>Neoliberalismo</span>
-      </div>
+      {
+        props.withTitles && 
+        <div className="titles">
+          <span>Liberalismo</span>
+          <span>Neoliberalismo</span>
+        </div>
+      }
       <div className="data">
         <div>
-          <h3>1860...</h3>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, 
-            but the majority have suffered alteration in some form, by injected 
-            humour, or randomised words which don't look even slightly believable. 
-            If you are going to use a passage of Lorem Ipsum, you need to be 
-            sure there isn't anything embarrassing hidden in the middle of text.
-          </p>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, 
-            but the majority have suffered alteration in some form, by injected 
-            humour, or randomised words which don't look even slightly believable. 
-            If you are going to use a passage of Lorem Ipsum, you need to be 
-            sure there isn't anything embarrassing hidden in the middle of text.
-          </p>
+          <h3>{props.liberalism.year}...</h3>
+          {props.liberalism.text}
         </div>
         <div>
-          <h3>2000...</h3>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, 
-            but the majority have suffered alteration in some form, by injected 
-            humour, or randomised words which don't look even slightly believable. 
-            If you are going to use a passage of Lorem Ipsum, you need to be 
-            sure there isn't anything embarrassing hidden in the middle of text.
-          </p>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, 
-            but the majority have suffered alteration in some form, by injected 
-            humour, or randomised words which don't look even slightly believable. 
-            If you are going to use a passage of Lorem Ipsum, you need to be 
-            sure there isn't anything embarrassing hidden in the middle of text.
-          </p>
+          <h3>{props.neoliberalism.year}...</h3>
+          {props.neoliberalism.text}
         </div>
       </div>
     </div>
   );
+}
+
+let objectShape = PropTypes.shape({
+  year: PropTypes.number.isRequired,
+  text: PropTypes.arrayOf(PropTypes.node).isRequired
+})
+
+TimeLineData.propTypes = {
+  withTitles: PropTypes.bool,
+  liberalism: objectShape.isRequired,
+  neoliberalism: objectShape.isRequired
 }
 
 export default TimeLineData;
