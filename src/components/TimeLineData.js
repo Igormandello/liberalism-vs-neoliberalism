@@ -53,7 +53,7 @@ class TimeLineData extends Component {
 }
 
 let objectShape = PropTypes.shape({
-  year: PropTypes.number.isRequired,
+  year: PropTypes.oneOf([PropTypes.string, PropTypes.number]).isRequired,
   text: PropTypes.arrayOf(PropTypes.node).isRequired
 })
 
