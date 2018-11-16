@@ -28,13 +28,23 @@ class TimeLineData extends Component {
           </div>
         }
         <div className="data">
-          <div>
-            <h3>{this.props.liberalism.year}...</h3>
-            {this.props.liberalism.text}
+          <div className={this.props.liberalism ? '' : 'empty'}>
+            {
+              this.props.liberalism &&
+              <div>
+                <h3>{this.props.liberalism.year}</h3>
+                {this.props.liberalism.text}
+              </div>
+            }
           </div>
-          <div>
-            <h3>{this.props.neoliberalism.year}...</h3>
-            {this.props.neoliberalism.text}
+          <div className={(this.props.neoliberalism ? '' : 'empty') + (this.props.liberalism ? '' : ' bordered')}>
+            {
+              this.props.neoliberalism &&
+              <div>
+                <h3>{this.props.neoliberalism.year}</h3>
+                {this.props.neoliberalism.text}
+              </div>
+            }
           </div>
         </div>
       </div>
@@ -49,8 +59,8 @@ let objectShape = PropTypes.shape({
 
 TimeLineData.propTypes = {
   withTitles: PropTypes.bool,
-  liberalism: objectShape.isRequired,
-  neoliberalism: objectShape.isRequired
+  liberalism: objectShape,
+  neoliberalism: objectShape
 }
 
 export default TimeLineData;
