@@ -27,7 +27,9 @@ const data = [
       year: 1688,
       text: [
         <p key={1}>
-        </p>
+          John Locke iniciou a ideia do Liberalismo social.
+        </p>,
+        <img src="https://www.intellectualtakeout.org/sites/ito/files/john_locke.jpg" />
       ]
     }
   },
