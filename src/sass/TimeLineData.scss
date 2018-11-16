@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
 
+  &.hidden {
+    color: white;
+  }
+  
   .titles {
     display: inline-flex;
 
@@ -15,11 +19,13 @@
       text-transform: uppercase;
       font-weight: 600;
       font-size: 1.2rem;
+      transition: color $transition-time ease-in-out $transition-time;
 
       &:first-child {
         text-align: right;
         width: calc(50% + #{$border-width});
         border-right: $border-width solid $border-color; 
+        transition: color $transition-time ease-in-out;
       }
     }
   }
@@ -32,10 +38,12 @@
     & > div {
       width: 50%;
       padding: 20px;
+      transition: color $transition-time ease-in-out $transition-time;
 
       &:first-child {
         width: calc(50% + #{$border-width});
         border-right: $border-width solid $border-color;
+        transition: color $transition-time ease-in-out;
       }
 
       h3 {

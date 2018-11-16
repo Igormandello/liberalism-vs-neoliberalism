@@ -10,6 +10,11 @@
   text-align: center;
   font-size: 1.4rem;
   font-weight: 600;
+  transition: color 0.25s ease-in-out;
+
+  &.hidden {
+    color: #FFF;
+  }
 
   &:not(:first-child) {
     margin-top: 40px;
