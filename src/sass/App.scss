@@ -45,7 +45,8 @@ section {
   padding: 60px 10vw;
 
   &.intro, &.conclusion {
-    padding: 60px 25vw;
+    padding-right: 25vw;
+    padding-left: 25vw;
     font-size: 1.4rem;
 
     cite {
@@ -71,5 +72,27 @@ section {
         background-color: white;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  section, section.intro, section.conclusion {
+    padding: 40px 18vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section, section.intro, section.conclusion {
+    padding: 40px 40px;
   }
 }
