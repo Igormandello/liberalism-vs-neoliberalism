@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -22,5 +26,14 @@ h2 {
     background-color: black;
     margin: 0 auto;
     margin-top: 6px;
+  }
+}
+
+p {
+  margin: 0;
+  line-height: 1.4;
+  
+  &:not(:last-child) {
+    margin-bottom: .5em;
   }
 }
