@@ -39,3 +39,18 @@ p {
     margin-bottom: .5em;
   }
 }
+
+section {
+  padding: 80px 10vw;
+
+  &.intro {
+    padding: 80px 25vw;
+    font-size: 1.4rem;
+
+    cite {
+      display: block;
+      text-align: right;
+      margin-top: 16px;
+    }
+  }
+}
