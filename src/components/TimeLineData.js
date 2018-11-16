@@ -1,29 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ScrollManager from '@igormandello/scroll-trigger';
 import '../css/TimeLineData.css';
 
-function TimeLineData(props) {
-  return (
-    <div className="timeLineData">
-      {
-        props.withTitles && 
-        <div className="titles">
-          <span>Liberalismo</span>
-          <span>Neoliberalismo</span>
-        </div>
-      }
-      <div className="data">
-        <div>
-          <h3>{props.liberalism.year}...</h3>
-          {props.liberalism.text}
-        </div>
-        <div>
-          <h3>{props.neoliberalism.year}...</h3>
-          {props.neoliberalism.text}
+class TimeLineData extends Component {
+  componentDidMount() {
+    let sm = new ScrollManager();
+    sm.addSection(this.refs.timeLineData, () => console.log('oi'));
+  }
+
+  render() {
+    return (
+      <div ref="timeLineData" className={'timeLineData' + (this.props.hidden ? ' hidden' : '')}>
+        {
+          this.props.withTitles && 
+          <div className="titles">
+            <span>Liberalismo</span>
+            <span>Neoliberalismo</span>
+          </div>
+        }
+        <div className="data">
+          <div>
+            <h3>{this.props.liberalism.year}...</h3>
+            {this.props.liberalism.text}
+          </div>
+          <div>
+            <h3>{this.props.neoliberalism.year}...</h3>
+            {this.props.neoliberalism.text}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 let objectShape = PropTypes.shape({
@@ -33,6 +41,7 @@ let objectShape = PropTypes.shape({
 
 TimeLineData.propTypes = {
   withTitles: PropTypes.bool,
+  hidden: PropTypes.bool,
   liberalism: objectShape.isRequired,
   neoliberalism: objectShape.isRequired
 }

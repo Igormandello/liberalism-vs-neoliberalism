@@ -1,7 +1,10 @@
 import React from 'react';
+import ScrollManager from '@igormandello/scroll-trigger';
 import TimeLineTitle from './TimeLineTitle';
 import TimeLineData from './TimeLineData';
 import '../css/TimeLine.css';
+
+ScrollManager.offsetTop = 0.25;
 
 function TimeLine() {
   return (
