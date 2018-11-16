@@ -3,3 +3,24 @@
 body {
   font-family: 'Raleway', sans-serif;
 }
+
+h1, h2 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  
+  &::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 6px;
+  }
+}
