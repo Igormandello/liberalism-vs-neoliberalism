@@ -30,6 +30,11 @@
         width: calc(50% + #{$border-width});
         border-right: $border-width solid $border-color; 
         transition: color $transition-time ease-in-out;
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
       }
     }
   }

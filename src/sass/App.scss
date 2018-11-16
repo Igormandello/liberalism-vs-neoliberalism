@@ -86,13 +86,17 @@ section {
     font-size: 10px;
   }
 
-  section, section.intro, section.conclusion {
-    padding: 40px 18vw;
+  section {
+    padding: 40px 20px;
+
+    &.intro, &.conclusion {
+      padding: 40px 18vw;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
-  section, section.intro, section.conclusion {
+  section.intro, section.conclusion {
     padding: 40px 40px;
   }
 }
