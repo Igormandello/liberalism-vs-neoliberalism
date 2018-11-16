@@ -41,10 +41,10 @@ p {
 }
 
 section {
-  padding: 80px 10vw;
+  padding: 60px 10vw;
 
-  &.intro {
-    padding: 80px 25vw;
+  &.intro, &.conclusion {
+    padding: 60px 25vw;
     font-size: 1.4rem;
 
     cite {
@@ -52,6 +52,10 @@ section {
       text-align: right;
       margin-top: 16px;
     }
+  }
+
+  &.conclusion {
+    background-color: #fafafa;
   }
 
   &.divider {

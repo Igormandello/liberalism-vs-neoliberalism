@@ -28,6 +28,19 @@ class App extends Component {
         <section>
           <TimeLine/>
         </section>
+        <section className="conclusion">
+          <h2>Conclusão</h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but 
+            the majority have suffered alteration in some form, by injected humour, 
+            or randomised words which don't look even slightly believable.
+          </p>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but 
+            the majority have suffered alteration in some form, by injected humour, 
+            or randomised words which don't look even slightly believable.
+          </p>
+        </section>
       </div>
     );
   }

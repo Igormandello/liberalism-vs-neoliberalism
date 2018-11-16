@@ -18,7 +18,6 @@ function TimeLine() {
 
 const data = [
   {
-    key: 1,
     liberalism: {
       year: 1860,
       text: [
