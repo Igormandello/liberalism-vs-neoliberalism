@@ -12,14 +12,13 @@ class App extends Component {
         <section className="intro">
           <h2>Introdução</h2>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but 
-            the majority have suffered alteration in some form, by injected humour, 
-            or randomised words which don't look even slightly believable.
+            Este trabalho visa comparar o Liberalismo Clássico com o Neoliberalismo,
+            mostrando semelhanças e diferenças entre os dois e em quais anos os
+            fatos ocorreram.
           </p>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but 
-            the majority have suffered alteration in some form, by injected humour, 
-            or randomised words which don't look even slightly believable.
+            Na linha do tempo abaixo, serão mostradas as três etapas histórias de 
+            cada teoria, abordando sua criação, utilização e crise.
           </p>
           <cite>Os Autores</cite>
         </section>
