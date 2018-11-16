@@ -21,6 +21,9 @@ class App extends Component {
           </p>
           <cite>Os Autores</cite>
         </section>
+        <section className="divider">
+          <h2>História</h2>
+        </section>
       </div>
     );
   }
