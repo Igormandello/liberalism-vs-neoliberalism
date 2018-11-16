@@ -14,12 +14,12 @@ class TimeLineData extends Component {
 
   componentDidMount() {
     let sm = new ScrollManager();
-    sm.addSection(this.refs.timeLineData, () => console.log('oi'));
+    sm.addSection(this.refs.timeLineData, () => this.setState({ hidden: false }));
   }
 
   render() {
     return (
-      <div ref="timeLineData" className={'timeLineData' + (this.props.hidden ? ' hidden' : '')}>
+      <div ref="timeLineData" className={'timeLineData' + (this.state.hidden ? ' hidden' : '')}>
         {
           this.props.withTitles && 
           <div className="titles">
@@ -49,7 +49,6 @@ let objectShape = PropTypes.shape({
 
 TimeLineData.propTypes = {
   withTitles: PropTypes.bool,
-  hidden: PropTypes.bool,
   liberalism: objectShape.isRequired,
   neoliberalism: objectShape.isRequired
 }

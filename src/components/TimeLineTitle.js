@@ -14,7 +14,7 @@ class TimeLineTitle extends Component {
 
   componentDidMount() {
     let sm = new ScrollManager();
-    sm.addSection(this.refs.timeLineTitle, () => console.log('oi'));
+    sm.addSection(this.refs.timeLineTitle, () => this.setState({ hidden: false }));
   }
 
   render() {
