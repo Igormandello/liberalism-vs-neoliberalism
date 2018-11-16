@@ -1,0 +1,40 @@
+.timeLineTitle {
+  position: relative;
+  min-width: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  &:not(:first-child) {
+    margin-top: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 2px;
+      background-color: black;
+      height: 40px;
+      top: -42px;
+      left: calc(50% - 1px);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 2px;
+      background-color: black;
+      height: 40px;
+      bottom: -42px;
+      left: calc(50% - 1px);
+    }
+  }
+}

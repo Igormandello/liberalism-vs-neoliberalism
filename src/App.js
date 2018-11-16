@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
+import TimeLine from './components/TimeLine';
 import './css/App.css';
 
 class App extends Component {
@@ -23,6 +24,9 @@ class App extends Component {
         </section>
         <section className="divider">
           <h2>História</h2>
+        </section>
+        <section>
+          <TimeLine/>
         </section>
       </div>
     );
