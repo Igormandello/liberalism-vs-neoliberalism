@@ -1,8 +1,11 @@
+@import './Consts';
+
 .timeLineTitle {
   position: relative;
   min-width: 300px;
   padding: 20px;
-  border: 2px solid black;
+  border: $border-width solid $border-color;
+  border-radius: 4px;
   margin: 0 auto;
   text-align: center;
   font-size: 1.4rem;
@@ -15,11 +18,11 @@
       position: absolute;
       content: "";
       display: block;
-      width: 2px;
-      background-color: black;
+      width: $border-width;
+      background-color: $border-color;
       height: 40px;
-      top: -42px;
-      left: calc(50% - 1px);
+      top: -40px - $border-width;
+      left: calc(50% - #{$border-width / 2});
     }
   }
 
@@ -30,11 +33,11 @@
       position: absolute;
       content: "";
       display: block;
-      width: 2px;
-      background-color: black;
+      width: $border-width;
+      background-color: $border-color;
       height: 40px;
-      bottom: -42px;
-      left: calc(50% - 1px);
+      bottom: -40px - $border-width;
+      left: calc(50% - #{$border-width / 2});
     }
   }
 }
