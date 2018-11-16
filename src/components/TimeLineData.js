@@ -4,6 +4,14 @@ import ScrollManager from '@igormandello/scroll-trigger';
 import '../css/TimeLineData.css';
 
 class TimeLineData extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      hidden: true
+    }
+  }
+
   componentDidMount() {
     let sm = new ScrollManager();
     sm.addSection(this.refs.timeLineData, () => console.log('oi'));

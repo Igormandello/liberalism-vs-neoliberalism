@@ -4,6 +4,14 @@ import ScrollManager from '@igormandello/scroll-trigger';
 import '../css/TimeLineTitle.css';
 
 class TimeLineTitle extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      hidden: true
+    }
+  }
+
   componentDidMount() {
     let sm = new ScrollManager();
     sm.addSection(this.refs.timeLineTitle, () => console.log('oi'));
@@ -11,7 +19,7 @@ class TimeLineTitle extends Component {
 
   render() {
     return (
-      <div ref="timeLineTitle" className={'timeLineTitle' + (this.props.hidden ? ' hidden' : '')}>
+      <div ref="timeLineTitle" className={'timeLineTitle' + (this.state.hidden ? ' hidden' : '')}>
         {this.props.text}
       </div>
     );
