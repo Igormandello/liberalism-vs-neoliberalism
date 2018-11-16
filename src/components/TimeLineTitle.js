@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../css/TimeLineTitle.css';
 
 function TimeLineTitle(props) {
@@ -7,6 +8,10 @@ function TimeLineTitle(props) {
       {props.text}
     </div>
   );
+}
+
+TimeLineTitle.propTypes = {
+  text: PropTypes.string.isRequired
 }
 
 export default TimeLineTitle;
