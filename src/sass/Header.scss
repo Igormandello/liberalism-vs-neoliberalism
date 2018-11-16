@@ -1,0 +1,54 @@
+$header-padding: 60px;
+
+header {
+  overflow: hidden;
+  display: flex;
+  background: linear-gradient(180deg, rgba($color: black, $alpha: 0.5) 0, rgba(0, 0, 0, 0.1) 100%), 
+              url('../assets/background.jpeg'), 
+              #FFD600;
+  background-blend-mode: soft-light;
+
+  height: 80vh;
+  padding: $header-padding 140px;
+  align-items: flex-end;
+  box-shadow: 0 4px 8px rgba($color: black, $alpha: 0.2);
+
+  .main {
+    width: min-content;
+    margin-right: 60px;
+
+    h1 {
+      display: inline-block;
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .authors {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: calc(100% + #{$header-padding});
+      background-color: black;
+      margin-left: -10px;
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    span {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+  }
+}

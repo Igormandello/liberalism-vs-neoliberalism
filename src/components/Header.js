@@ -1,11 +1,12 @@
 import React from 'react';
+import '../css/Header.css';
 
 function Header() {
   return (
     <header>
       <div className="main">
         <h1>
-          Liberalismo e Neoliberalismo
+          Liberalismo e <br/> Neoliberalismo
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, 
