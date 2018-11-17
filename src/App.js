@@ -26,6 +26,10 @@ class App extends Component {
           <h2>História</h2>
         </section>
         <section>
+          <div className="disclaimer" onClick={(evt) => evt.target.classList.add('hidden')}>
+            Para uma melhor experiência, utilize um computador ou
+            o celular no modo paisagem (horizontal)
+          </div>
           <TimeLine/>
         </section>
         <section className="conclusion">
