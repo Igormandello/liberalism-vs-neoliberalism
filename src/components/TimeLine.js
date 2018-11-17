@@ -33,6 +33,16 @@ const data = [
         </p>,
         <img src={require('../assets/locke.jpg')} alt=""/>
       ]
+    },
+    neoliberalism: {
+      year: 1944,
+      text: [
+        <p key={1}>
+          Friedrich Hayek propôs os princípios básicos do Neoliberalismo com seu livro, "O Caminho da Servidão".
+        </p>,
+        <img src={require('../assets/hayek.jpg')} alt=""/>,
+        <img style={{ width: '50%', margin: '0 25%' }} src={require('../assets/caminho-da-servidao.jpg')} alt=""/>
+      ]
     }
   },
   {
@@ -44,6 +54,16 @@ const data = [
           e da mão invisível do mercado onze anos antes de Adam Smith 
         </p>,
         <img src={require('../assets/anders.jpg')} alt=""/>
+      ]
+    },
+    neoliberalism: {
+      year: 1947,
+      text: [
+        <p key={1}>
+          Hayek convidou alguns intelectuais de sua época que compartilhavam
+          da mesma ideologia, fundando a Sociedade Mont Pèlerin.
+        </p>,
+        <img src={require('../assets/sociedade.jpg')} alt=""/>
       ]
     }
   },
@@ -58,7 +78,7 @@ const data = [
         <p key={2}>
           Livro 'Wealth of Nations', onde ele descreve conceitos do Liberalismo.
         </p>,
-        <img src={require('../assets/wealth.jpg')} alt=""/>
+        <img style={{ width: '50%', margin: '0 25%' }} src={require('../assets/wealth.jpg')} alt=""/>
       ]
     },
     neoliberalism: {
@@ -66,6 +86,20 @@ const data = [
       text: [
         <p key={1}>
         </p>
+      ]
+    }
+  },
+  {
+    liberalism: {
+      year: '',
+      text: [
+        <iframe src="https://www.youtube.com/embed/iU-8Uz_nMaQ?start=19&end=290" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      ]
+    },
+    neoliberalism: {
+      year: '',
+      text: [
+        <iframe src="https://www.youtube.com/embed/pzVf9ce80Nc?start=47&end=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       ]
     }
   },
