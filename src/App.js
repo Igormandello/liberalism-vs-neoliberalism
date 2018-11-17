@@ -31,14 +31,12 @@ class App extends Component {
         <section className="conclusion">
           <h2>Conclusão</h2>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but 
-            the majority have suffered alteration in some form, by injected humour, 
-            or randomised words which don't look even slightly believable.
+            Assim, existiram muitas semelhanças entre os dois modelos políticos e econômicos,
+            que podem ser vistos em seus conceitos e problemas que passaram.
           </p>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but 
-            the majority have suffered alteration in some form, by injected humour, 
-            or randomised words which don't look even slightly believable.
+            Também podemos perceber que alguns erros do Liberalismo Clássico tentaram ser corrigidos
+            durante a crise do Neoliberalismo, para assim diminuir o impacto.
           </p>
         </section>
         <Footer/>

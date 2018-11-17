@@ -94,7 +94,8 @@ const data = [
         <p key={1}>
           Desemprego dos EUA no mesmo período.
         </p>,
-        <img src={require('../assets/desemprego.jpg')} alt=""/>
+        <img src={require('../assets/desemprego.jpg')} alt=""/>,
+        <iframe title="1929crisis" width="100%" height="300px" src="https://www.youtube.com/embed/Sv7IP2qL0gg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;"/>
       ]
     },
     neoliberalism: {
