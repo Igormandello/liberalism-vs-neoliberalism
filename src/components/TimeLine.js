@@ -13,10 +13,12 @@ function TimeLine() {
       <TimeLineData {...data[0]} withTitles/>
       <TimeLineData {...data[1]}/>
       <TimeLineData {...data[2]}/>
-      <TimeLineTitle text="Utilização"/>
+      <TimeLineTitle text="Princípios"/>
       <TimeLineData {...data[3]} withTitles/>
-      <TimeLineTitle text="Crise"/>
+      <TimeLineTitle text="Utilização"/>
       <TimeLineData {...data[4]} withTitles/>
+      <TimeLineTitle text="Crise"/>
+      <TimeLineData {...data[5]} withTitles/>
     </div>
   );
 }
@@ -95,7 +97,7 @@ const data = [
           Desemprego dos EUA no mesmo período.
         </p>,
         <img src={require('../assets/desemprego.jpg')} alt=""/>,
-        <iframe title="1929crisis" width="100%" height="300px" src="https://www.youtube.com/embed/Sv7IP2qL0gg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;"/>
+        <iframe title="1929crisis" src="https://www.youtube.com/embed/Sv7IP2qL0gg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;"/>
       ]
     },
     neoliberalism: {
