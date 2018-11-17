@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f4c115ba8f545710b145faecbe47704a",
-    "url": "/liberalism-vs-neoliberalism/static/media/anders.f4c115ba.jpg"
+    "revision": "41808718d8b09261c4c69423498f5794",
+    "url": "/liberalism-vs-neoliberalism/static/media/sociedade.41808718.jpg"
   },
   {
-    "revision": "be3c3ca8923a93c8c0db",
-    "url": "/liberalism-vs-neoliberalism/static/css/main.ec847074.chunk.css"
+    "revision": "ae461776d00e53731bfb",
+    "url": "/liberalism-vs-neoliberalism/static/css/main.086636a2.chunk.css"
   },
   {
     "revision": "79d51feed1144571ca14006a45022d53",
@@ -28,8 +28,20 @@ self.__precacheManifest = [
     "url": "/liberalism-vs-neoliberalism/static/media/locke.0bd957d9.jpg"
   },
   {
-    "revision": "be3c3ca8923a93c8c0db",
-    "url": "/liberalism-vs-neoliberalism/static/js/main.be3c3ca8.chunk.js"
+    "revision": "79909f471284aefde0949ccbbcf2a921",
+    "url": "/liberalism-vs-neoliberalism/static/media/hayek.79909f47.jpg"
+  },
+  {
+    "revision": "7c2123f30e68d16a711775609d51ec60",
+    "url": "/liberalism-vs-neoliberalism/static/media/caminho-da-servidao.7c2123f3.jpg"
+  },
+  {
+    "revision": "f4c115ba8f545710b145faecbe47704a",
+    "url": "/liberalism-vs-neoliberalism/static/media/anders.f4c115ba.jpg"
+  },
+  {
+    "revision": "ae461776d00e53731bfb",
+    "url": "/liberalism-vs-neoliberalism/static/js/main.ae461776.chunk.js"
   },
   {
     "revision": "e07597e56659043e9341efc094852c29",
@@ -38,6 +50,18 @@ self.__precacheManifest = [
   {
     "revision": "418568387e0d3f31049b6b53a817645a",
     "url": "/liberalism-vs-neoliberalism/static/media/wealth.41856838.jpg"
+  },
+  {
+    "revision": "e482d8d557651c6997b39b615e8f2b72",
+    "url": "/liberalism-vs-neoliberalism/static/media/margaret-ronald.e482d8d5.jpeg"
+  },
+  {
+    "revision": "d54abf54eebc81c050953e0b6f4bb889",
+    "url": "/liberalism-vs-neoliberalism/static/media/inflacao-margaret.d54abf54.jpeg"
+  },
+  {
+    "revision": "eb67d143691e8022a8706ea2282c8119",
+    "url": "/liberalism-vs-neoliberalism/static/media/desemprego-margaret.eb67d143.jpeg"
   },
   {
     "revision": "b51967782f2ebced9cdcb004303741fd",
@@ -56,7 +80,7 @@ self.__precacheManifest = [
     "url": "/liberalism-vs-neoliberalism/static/css/1.93b5a0fa.chunk.css"
   },
   {
-    "revision": "ba9172a09e06c5db5b9c3d540fb18700",
+    "revision": "68e07dc5923ff9a9a3165a6cdf550349",
     "url": "/liberalism-vs-neoliberalism/index.html"
   }
 ];
