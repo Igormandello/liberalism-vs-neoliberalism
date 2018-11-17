@@ -8,7 +8,7 @@ header {
               #FFD600;
   background-blend-mode: soft-light;
 
-  height: 80vh;
+  min-height: 80vh;
   padding: $header-padding 140px;
   align-items: flex-end;
   box-shadow: 0 4px 8px rgba($color: black, $alpha: 0.2);
