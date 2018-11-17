@@ -14,7 +14,9 @@
     "start": "concurrently \"sass --watch src/sass:src/css\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,6 +29,7 @@
   ],
   "devDependencies": {
     "concurrently": "^4.0.1",
+    "gh-pages": "^2.0.1",
     "sass": "^1.15.0"
   }
 }
