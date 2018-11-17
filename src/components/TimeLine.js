@@ -19,6 +19,10 @@ function TimeLine() {
       <TimeLineData {...data[4]} withTitles/>
       <TimeLineTitle text="Crise"/>
       <TimeLineData {...data[5]} withTitles/>
+      <TimeLineTitle text="Vídeos recomendados"/>
+      <TimeLineData {...data[6]} withTitles/>
+      <TimeLineTitle text="Leia sobre"/>
+      <TimeLineData {...data[7]} withTitles/>
     </div>
   );
 }
@@ -112,14 +116,22 @@ const data = [
       ]
     },
     neoliberalism: {
-      year: 1970,
+      year: '1979/1981',
       text: [
         <p key={1}>
-        </p>
+          O governo de Margaret Thatcher na Inglaterra foi o primeiro com
+          ideais neoliberais. No mesmo período também ocorreu o de Ronald
+          Reagan.
+        </p>,
+        <img src={require('../assets/margaret-ronald.jpeg')} alt=""/>,
+        <p key={2}>
+          Inflação e desemprego no governo de Margaret Thatcher (1979-1990).
+        </p>,
+        <img src={require('../assets/inflacao-margaret.jpeg')} alt=""/>,
+        <img src={require('../assets/desemprego-margaret.jpeg')} alt=""/>
       ]
     }
-  },
-  {
+  }, {
     liberalism: {
       year: 1929,
       text: [
@@ -145,6 +157,40 @@ const data = [
           Comparação do prejuízo econômico entre as duas crises
         </p>,
         <img src={require('../assets/comparacao.jpg')} alt=""/>
+      ]
+    }
+  }, {
+    liberalism: {
+      text: [
+        <h4 key={1}>
+          Para começar: Uma introdução ao liberalismo.
+        </h4>,
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9qt52lQcyIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+        <h4 key={1}>
+          Um pouco sobre John Locke.
+        </h4>,
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SPI9oTr76Ww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+      ]
+    },
+    neoliberalism: {
+      text: [
+        <h4 key={1}>
+          Diferenças de Liberalismo e Neoliberalismo.
+        </h4>,
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HKaHPJ6smHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+      ]
+    }
+  }, {
+    liberalism: {
+      text: [
+        <a target="blank" href="https://www.infoescola.com/filosofia/liberalismo/">O que é Liberalismo? - InfoEscola</a>,
+        <a target="blank" href="https://brasilescola.uol.com.br/economia/liberalismo-economico.htm">Liberalismo Econômico - BrasilEscola UOL</a>
+      ]
+    },
+    neoliberalism: {
+      text: [
+        <a target="blank" href="https://brasilescola.uol.com.br/o-que-e/geografia/o-que-e-neoliberalismo.htm">O que é Neoliberalismo? - BrasilEscola UOL</a>,
+        <a target="blank" href="https://www.stoodi.com.br/blog/2018/08/22/neoliberalismo/">Neoliberalismo - Stoodi</a>
       ]
     }
   }
