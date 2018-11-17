@@ -29,7 +29,7 @@ const data = [
         <p key={1}>
           John Locke iniciou a ideia do Liberalismo social.
         </p>,
-        <img src="https://www.intellectualtakeout.org/sites/ito/files/john_locke.jpg" />
+        <img src={require('../assets/locke.jpg')} alt=""/>
       ]
     }
   },
@@ -38,20 +38,29 @@ const data = [
       year: 1765,
       text: [
         <p key={1}>
-        </p>
-      ]
-    },
-    neoliberalism: {
-      year: 1930,
-      text: [
-        <p key={1}>
-        </p>
+          Anders Chydenius chegou a descrever conceitos de livre mercado
+          e da mão invisível do mercado onze anos antes de Adam Smith 
+        </p>,
+        <img src={require('../assets/anders.jpg')} alt=""/>
       ]
     }
   },
   {
     liberalism: {
       year: 1776,
+      text: [
+        <p key={1}>
+          Adam Smith, o economista mais famoso quando se trata de Liberalismo.
+        </p>,
+        <img src={require('../assets/adam.jpg')} alt=""/>,
+        <p key={2}>
+          Livro 'Wealth of Nations', onde ele descreve conceitos do Liberalismo.
+        </p>,
+        <img src={require('../assets/wealth.jpg')} alt=""/>
+      ]
+    },
+    neoliberalism: {
+      year: 1930,
       text: [
         <p key={1}>
         </p>
@@ -79,14 +88,26 @@ const data = [
       year: 1929,
       text: [
         <p key={1}>
-        </p>
+          Ações dos EUA no periodo da crise de 1929.
+        </p>,
+        <img src={require('../assets/crise1929.png')} alt=""/>,
+        <p key={1}>
+          Desemprego dos EUA no mesmo período.
+        </p>,
+        <img src={require('../assets/desemprego.jpg')} alt=""/>
       ]
     },
     neoliberalism: {
       year: 2008,
       text: [
         <p key={1}>
-        </p>
+          Ações dos EUA no periodo da crise de 2008.
+        </p>,
+        <img src={require('../assets/crise2008.jpg')} alt=""/>,
+        <p key={2}>
+          Comparação do prejuízo econômico entre as duas crises
+        </p>,
+        <img src={require('../assets/comparacao.jpg')} alt=""/>
       ]
     }
   }
