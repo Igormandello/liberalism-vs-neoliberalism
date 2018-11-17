@@ -35,7 +35,7 @@ const data = [
         <p key={1}>
           John Locke iniciou a ideia do Liberalismo social.
         </p>,
-        <img src={require('../assets/locke.jpg')} alt=""/>
+        <img key={2} src={require('../assets/locke.jpg')} alt=""/>
       ]
     },
     neoliberalism: {
@@ -44,8 +44,8 @@ const data = [
         <p key={1}>
           Friedrich Hayek propôs os princípios básicos do Neoliberalismo com seu livro, "O Caminho da Servidão".
         </p>,
-        <img src={require('../assets/hayek.jpg')} alt=""/>,
-        <img style={{ width: '50%', margin: '0 25%' }} src={require('../assets/caminho-da-servidao.jpg')} alt=""/>
+        <img key={2} src={require('../assets/hayek.jpg')} alt=""/>,
+        <img key={3} style={{ width: '50%', margin: '0 25%' }} src={require('../assets/caminho-da-servidao.jpg')} alt=""/>
       ]
     }
   },
@@ -57,7 +57,7 @@ const data = [
           Anders Chydenius chegou a descrever conceitos de livre mercado
           e da mão invisível do mercado onze anos antes de Adam Smith 
         </p>,
-        <img src={require('../assets/anders.jpg')} alt=""/>
+        <img key={2} src={require('../assets/anders.jpg')} alt=""/>
       ]
     },
     neoliberalism: {
@@ -67,7 +67,7 @@ const data = [
           Hayek convidou alguns intelectuais de sua época que compartilhavam
           da mesma ideologia, fundando a Sociedade Mont Pèlerin.
         </p>,
-        <img src={require('../assets/sociedade.jpg')} alt=""/>
+        <img key={2} src={require('../assets/sociedade.jpg')} alt=""/>
       ]
     }
   },
@@ -78,11 +78,11 @@ const data = [
         <p key={1}>
           Adam Smith, o economista mais famoso quando se trata de Liberalismo.
         </p>,
-        <img src={require('../assets/adam.jpg')} alt=""/>,
-        <p key={2}>
+        <img key={2} src={require('../assets/adam.jpg')} alt=""/>,
+        <p key={3}>
           Livro 'Wealth of Nations', onde ele descreve conceitos do Liberalismo.
         </p>,
-        <img style={{ width: '50%', margin: '0 25%' }} src={require('../assets/wealth.jpg')} alt=""/>
+        <img key={4} style={{ width: '50%', margin: '0 25%' }} src={require('../assets/wealth.jpg')} alt=""/>
       ]
     },
     neoliberalism: {
@@ -95,15 +95,13 @@ const data = [
   },
   {
     liberalism: {
-      year: '',
       text: [
-        <iframe src="https://www.youtube.com/embed/iU-8Uz_nMaQ?start=19&end=290" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe key={1} title="liberalism" src="https://www.youtube.com/embed/iU-8Uz_nMaQ?start=19&end=290" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       ]
     },
     neoliberalism: {
-      year: '',
       text: [
-        <iframe src="https://www.youtube.com/embed/pzVf9ce80Nc?start=47&end=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe key={1} title="neoliberalism" src="https://www.youtube.com/embed/pzVf9ce80Nc?start=47&end=141" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       ]
     }
   },
@@ -123,12 +121,12 @@ const data = [
           ideais neoliberais. No mesmo período também ocorreu o de Ronald
           Reagan.
         </p>,
-        <img src={require('../assets/margaret-ronald.jpeg')} alt=""/>,
-        <p key={2}>
+        <img key={2} src={require('../assets/margaret-ronald.jpeg')} alt=""/>,
+        <p key={3}>
           Inflação e desemprego no governo de Margaret Thatcher (1979-1990).
         </p>,
-        <img src={require('../assets/inflacao-margaret.jpeg')} alt=""/>,
-        <img src={require('../assets/desemprego-margaret.jpeg')} alt=""/>
+        <img key={4} src={require('../assets/inflacao-margaret.jpeg')} alt=""/>,
+        <img key={5} src={require('../assets/desemprego-margaret.jpeg')} alt=""/>
       ]
     }
   }, {
@@ -138,12 +136,12 @@ const data = [
         <p key={1}>
           Ações dos EUA no periodo da crise de 1929.
         </p>,
-        <img src={require('../assets/crise1929.png')} alt=""/>,
-        <p key={1}>
+        <img key={2} src={require('../assets/crise1929.png')} alt=""/>,
+        <p key={3}>
           Desemprego dos EUA no mesmo período.
         </p>,
-        <img src={require('../assets/desemprego.jpg')} alt=""/>,
-        <iframe title="1929crisis" src="https://www.youtube.com/embed/Sv7IP2qL0gg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;"/>
+        <img key={4} src={require('../assets/desemprego.jpg')} alt=""/>,
+        <iframe key={5} title="1929crisis" src="https://www.youtube.com/embed/Sv7IP2qL0gg" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;" allowFullScreen/>
       ]
     },
     neoliberalism: {
@@ -152,45 +150,45 @@ const data = [
         <p key={1}>
           Ações dos EUA no periodo da crise de 2008.
         </p>,
-        <img src={require('../assets/crise2008.jpg')} alt=""/>,
-        <p key={2}>
+        <img key={2} src={require('../assets/crise2008.jpg')} alt=""/>,
+        <p key={3}>
           Comparação do prejuízo econômico entre as duas crises
         </p>,
-        <img src={require('../assets/comparacao.jpg')} alt=""/>
+        <img key={4} src={require('../assets/comparacao.jpg')} alt=""/>
       ]
     }
   }, {
     liberalism: {
       text: [
-        <h4 key={1}>
+        <p key={1}>
           Para começar: Uma introdução ao liberalismo.
-        </h4>,
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9qt52lQcyIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
-        <h4 key={1}>
+        </p>,
+        <iframe key={2} title="liberalismIntro" src="https://www.youtube.com/embed/9qt52lQcyIg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>,
+        <p key={3}>
           Um pouco sobre John Locke.
-        </h4>,
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SPI9oTr76Ww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+        </p>,
+        <iframe key={4} title="locke" src="https://www.youtube.com/embed/SPI9oTr76Ww" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>,
       ]
     },
     neoliberalism: {
       text: [
-        <h4 key={1}>
+        <p key={1}>
           Diferenças de Liberalismo e Neoliberalismo.
-        </h4>,
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HKaHPJ6smHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+        </p>,
+        <iframe key={2} title="liberalism-vs-neoliberalism" src="https://www.youtube.com/embed/HKaHPJ6smHE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>,
       ]
     }
   }, {
     liberalism: {
       text: [
-        <a target="blank" href="https://www.infoescola.com/filosofia/liberalismo/">O que é Liberalismo? - InfoEscola</a>,
-        <a target="blank" href="https://brasilescola.uol.com.br/economia/liberalismo-economico.htm">Liberalismo Econômico - BrasilEscola UOL</a>
+        <a key={1} target="blank" href="https://www.infoescola.com/filosofia/liberalismo/">O que é Liberalismo? - InfoEscola</a>,
+        <a key={2} target="blank" href="https://brasilescola.uol.com.br/economia/liberalismo-economico.htm">Liberalismo Econômico - BrasilEscola UOL</a>
       ]
     },
     neoliberalism: {
       text: [
-        <a target="blank" href="https://brasilescola.uol.com.br/o-que-e/geografia/o-que-e-neoliberalismo.htm">O que é Neoliberalismo? - BrasilEscola UOL</a>,
-        <a target="blank" href="https://www.stoodi.com.br/blog/2018/08/22/neoliberalismo/">Neoliberalismo - Stoodi</a>
+        <a key={1} target="blank" href="https://brasilescola.uol.com.br/o-que-e/geografia/o-que-e-neoliberalismo.htm">O que é Neoliberalismo? - BrasilEscola UOL</a>,
+        <a key={2} target="blank" href="https://www.stoodi.com.br/blog/2018/08/22/neoliberalismo/">Neoliberalismo - Stoodi</a>
       ]
     }
   }
