@@ -2,7 +2,7 @@
   "name": "liberalism-vs-neoliberalism",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://igormandello.github.io/liberalism-vs-neoliberalism/",
+  "homepage": "https://igormandello.github.io/liberalism-vs-neoliberalism/",
   "dependencies": {
     "@igormandello/scroll-trigger": "^1.1.1",
     "normalize-css": "^2.3.1",

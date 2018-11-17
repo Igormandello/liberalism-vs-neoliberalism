@@ -2,6 +2,7 @@ import React from 'react';
 import ScrollManager from '@igormandello/scroll-trigger';
 import TimeLineTitle from './TimeLineTitle';
 import TimeLineData from './TimeLineData';
+import Img from './Img';
 import '../css/TimeLine.css';
 
 ScrollManager.offsetTop = 0.25;
@@ -35,7 +36,8 @@ const data = [
         <p key={1}>
           John Locke iniciou a ideia do Liberalismo social.
         </p>,
-        <img key={2} src={require('../assets/locke.jpg')} alt=""/>
+        <Img key={2} src={require('../assets/locke.jpg')}/>,
+        <iframe title="locke-ideas" key={3} src="https://www.youtube.com/embed/Yv3ymKyaUIM?end=72" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       ]
     },
     neoliberalism: {
@@ -44,8 +46,8 @@ const data = [
         <p key={1}>
           Friedrich Hayek propôs os princípios básicos do Neoliberalismo com seu livro, "O Caminho da Servidão".
         </p>,
-        <img key={2} src={require('../assets/hayek.jpg')} alt=""/>,
-        <img key={3} style={{ width: '50%', margin: '0 25%' }} src={require('../assets/caminho-da-servidao.jpg')} alt=""/>
+        <Img key={2} src={require('../assets/hayek.jpg')}/>,
+        <Img key={3} style={{ width: '50%', margin: '0 25%' }} src={require('../assets/caminho-da-servidao.jpg')}/>
       ]
     }
   },
@@ -57,7 +59,7 @@ const data = [
           Anders Chydenius chegou a descrever conceitos de livre mercado
           e da mão invisível do mercado onze anos antes de Adam Smith 
         </p>,
-        <img key={2} src={require('../assets/anders.jpg')} alt=""/>
+        <Img key={2} src={require('../assets/anders.jpg')}/>
       ]
     },
     neoliberalism: {
@@ -67,7 +69,7 @@ const data = [
           Hayek convidou alguns intelectuais de sua época que compartilhavam
           da mesma ideologia, fundando a Sociedade Mont Pèlerin.
         </p>,
-        <img key={2} src={require('../assets/sociedade.jpg')} alt=""/>
+        <Img key={2} src={require('../assets/sociedade.jpg')}/>
       ]
     }
   },
@@ -78,11 +80,11 @@ const data = [
         <p key={1}>
           Adam Smith, o economista mais famoso quando se trata de Liberalismo.
         </p>,
-        <img key={2} src={require('../assets/adam.jpg')} alt=""/>,
+        <Img key={2} src={require('../assets/adam.jpg')}/>,
         <p key={3}>
           Livro 'Wealth of Nations', onde ele descreve conceitos do Liberalismo.
         </p>,
-        <img key={4} style={{ width: '50%', margin: '0 25%' }} src={require('../assets/wealth.jpg')} alt=""/>
+        <Img key={4} style={{ width: '50%', margin: '0 25%' }} src={require('../assets/wealth.jpg')}/>
       ]
     },
     neoliberalism: {
@@ -121,12 +123,12 @@ const data = [
           ideais neoliberais. No mesmo período também ocorreu o de Ronald
           Reagan.
         </p>,
-        <img key={2} src={require('../assets/margaret-ronald.jpeg')} alt=""/>,
+        <Img key={2} src={require('../assets/margaret-ronald.jpeg')}/>,
         <p key={3}>
           Inflação e desemprego no governo de Margaret Thatcher (1979-1990).
         </p>,
-        <img key={4} src={require('../assets/inflacao-margaret.jpeg')} alt=""/>,
-        <img key={5} src={require('../assets/desemprego-margaret.jpeg')} alt=""/>
+        <Img key={4} src={require('../assets/inflacao-margaret.jpeg')}/>,
+        <Img key={5} src={require('../assets/desemprego-margaret.jpeg')}/>
       ]
     }
   }, {
@@ -136,11 +138,11 @@ const data = [
         <p key={1}>
           Ações dos EUA no periodo da crise de 1929.
         </p>,
-        <img key={2} src={require('../assets/crise1929.png')} alt=""/>,
+        <Img key={2} src={require('../assets/crise1929.png')}/>,
         <p key={3}>
           Desemprego dos EUA no mesmo período.
         </p>,
-        <img key={4} src={require('../assets/desemprego.jpg')} alt=""/>,
+        <Img key={4} src={require('../assets/desemprego.jpg')}/>,
         <iframe key={5} title="1929crisis" src="https://www.youtube.com/embed/Sv7IP2qL0gg" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;" allowFullScreen/>
       ]
     },
@@ -150,11 +152,11 @@ const data = [
         <p key={1}>
           Ações dos EUA no periodo da crise de 2008.
         </p>,
-        <img key={2} src={require('../assets/crise2008.jpg')} alt=""/>,
+        <Img key={2} src={require('../assets/crise2008.jpg')}/>,
         <p key={3}>
           Comparação do prejuízo econômico entre as duas crises
         </p>,
-        <img key={4} src={require('../assets/comparacao.jpg')} alt=""/>
+        <Img key={4} src={require('../assets/comparacao.jpg')}/>
       ]
     }
   }, {
