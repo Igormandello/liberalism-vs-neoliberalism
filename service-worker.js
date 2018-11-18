@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/liberalism-vs-neoliberalism/precache-manifest.20f2cfd879aa8c7be84087a85a158d4b.js"
+  "/liberalism-vs-neoliberalism/precache-manifest.e0e3c1ff83015594ae4ca53e6363b139.js"
 );
 
 workbox.clientsClaim();

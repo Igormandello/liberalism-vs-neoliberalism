@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/liberalism-vs-neoliberalism/static/media/adam.e07597e5.jpg"
   },
   {
-    "revision": "f47c71b7abf63103e69a",
-    "url": "/liberalism-vs-neoliberalism/static/css/main.8417f443.chunk.css"
+    "revision": "b5dc49ae20fb1b844cd3",
+    "url": "/liberalism-vs-neoliberalism/static/css/main.53ef6118.chunk.css"
   },
   {
     "revision": "79d51feed1144571ca14006a45022d53",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/liberalism-vs-neoliberalism/static/media/sociedade.41808718.jpg"
   },
   {
-    "revision": "f47c71b7abf63103e69a",
-    "url": "/liberalism-vs-neoliberalism/static/js/main.f47c71b7.chunk.js"
+    "revision": "b5dc49ae20fb1b844cd3",
+    "url": "/liberalism-vs-neoliberalism/static/js/main.b5dc49ae.chunk.js"
   },
   {
     "revision": "418568387e0d3f31049b6b53a817645a",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/liberalism-vs-neoliberalism/static/css/1.93b5a0fa.chunk.css"
   },
   {
-    "revision": "947f40005f2829fcd63850ea4d31be28",
+    "revision": "c71556c2a037891e1382fa26f202a392",
     "url": "/liberalism-vs-neoliberalism/index.html"
   }
 ];
