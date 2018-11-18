@@ -86,13 +86,6 @@ const data = [
         </p>,
         <Img key={4} style={{ width: '50%', margin: '0 25%' }} src={require('../assets/wealth.jpg')}/>
       ]
-    },
-    neoliberalism: {
-      year: 1930,
-      text: [
-        <p key={1}>
-        </p>
-      ]
     }
   },
   {
@@ -109,10 +102,16 @@ const data = [
   },
   {
     liberalism: {
-      year: 1860,
+      year: 1861,
       text: [
         <p key={1}>
-        </p>
+          Guerra civíl americana, que acelerou o movimento Liberal.
+        </p>,
+        <Img key={2} src={require('../assets/american-civil-war.jpeg')}/>,
+        <p key={3}>
+          Abraham Lincon, um dos líderes da guerra civíl, considerado por muitos um símbolo Liberal.
+        </p>,
+        <Img key={4} src={require('../assets/abraham.jpg')}/>
       ]
     },
     neoliberalism: {

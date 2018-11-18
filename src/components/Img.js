@@ -27,7 +27,7 @@ class Img extends Component {
             <img onClick={this.handleOpen} src={this.props.src} alt=""/>
           </div>
         }
-        <img onClick={this.handleOpen} src={this.props.src} alt=""/>
+        <img onClick={this.handleOpen} {...this.props} alt=""/>
       </div>
     );
   }

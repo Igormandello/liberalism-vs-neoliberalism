@@ -30,6 +30,7 @@ class App extends Component {
             Para uma melhor experiência, utilize um computador ou
             o celular no modo paisagem (horizontal)
           </div>
+          <p className="hint">Dica: clique nas imagens para ampliá-las</p>
           <TimeLine/>
         </section>
         <section className="conclusion">
